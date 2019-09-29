@@ -1,10 +1,11 @@
 import React from 'react';
+import PokeList from './PokeList';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <PokeList />
     </div>
   );
 }

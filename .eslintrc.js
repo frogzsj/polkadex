@@ -7,7 +7,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react-hooks/exhaustive-deps": "off",
   },
   settings: {
     react: {
