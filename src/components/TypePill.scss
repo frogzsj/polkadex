@@ -1,0 +1,61 @@
+@import '../variables.scss';
+
+.PokeListEntry--type-pill {
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 120px;
+}
+
+@mixin pill-props($bgcolor, $sameBorder: false) {
+  background-color: $bgcolor;
+  color: $black;
+
+  @if $sameBorder {
+    border-color: $bgcolor;
+    color: white;
+  }
+}
+
+.bug { @include pill-props(green, true); }
+
+.dark { @include pill-props($dark-purple, true); }
+
+.dragon { @include pill-props($light-pink); }
+
+.electric { @include pill-props(yellow); }
+
+.fairy { @include pill-props(pink); }
+
+.fire { @include pill-props(red, true); }
+
+.fighting { @include pill-props($orange, true); }
+
+.flying { @include pill-props(grey, true); }
+
+.ghost { @include pill-props($light-purple); }
+
+.grass { @include pill-props(greenyellow); }
+
+.ground { @include pill-props($brown, true); }
+
+.ice { @include pill-props(cyan); }
+
+.normal { @include pill-props(white); }
+
+.rock { @include pill-props($black, true); }
+
+.steel { @include pill-props(steelblue, true); }
+
+.psychic { @include pill-props($magenta, true); }
+
+.poison { @include pill-props(purple, true); }
+
+.water { @include pill-props(blue, true); }

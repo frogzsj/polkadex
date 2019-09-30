@@ -1,5 +1,6 @@
 {
   "eslint.autoFixOnSave": true,
+  "stylelint.enable": true,
   "search.exclude": {
     "**/node_modules": true,
     ".cache": true,

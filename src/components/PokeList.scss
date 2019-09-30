@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.PokeList {
+  display: inline-grid;
+  padding: 50px;
+  max-width: 1440px;
+
+  .PokeListEntry--container {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 20px;
+    transition-property: border-color, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    width: 420px;
+    overflow: hidden;
+    white-space: wrap;
+
+    .PokeListEntry--main {
+      display: inline-flex;
+    }
+
+    &:hover {
+      border-color: gray;
+      // background-color: $light-gray;
+    }
+
+    &.PokeListEntry--active {
+      border-color: $magenta;
+      background-color: $blacker;
+    }
+
+    .PokeListEntry--info {
+      align-self: center;
+      width: 220px;
+    }
+
+    .PokeListEntry--name {
+      font-size: 20px;
+      text-transform: capitalize;
+
+      sub {
+        font-size: 10px;
+      }
+    }
+  }
+}

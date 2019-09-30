@@ -12,7 +12,6 @@ export const getPokemon = async id => {
       const result = await response.json();
       return {
         ...result,
-        name: result.name.replace('-m', '♂').replace('-f', '♀'),
         pic_url: POKE_PICS_URL(id),
       };
     }

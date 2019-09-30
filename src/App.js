@@ -1,5 +1,5 @@
 import React from 'react';
-import PokeList from './PokeList';
+import PokeList from './components/PokeList';
 import './App.scss';
 
 function App() {
